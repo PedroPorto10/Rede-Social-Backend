@@ -1,5 +1,6 @@
 # Como utilizar os controllers (rotas) do projeto
 
+# OBS: inserir manualmente usuário admin no banco de dados, com qualquer nome, qualquer senha e campo 'is_admin' como 'TRUE'
 
 Controller de criação de usuário (POST):
 
