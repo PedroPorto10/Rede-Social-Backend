@@ -22,19 +22,19 @@ Controller de login (POST):
 
 Controller de listagem de usuários (GET):
 
-Enviar uma solicitaão com método GET para a url http://localhost:5000/users
+Enviar uma solicitaão com método GET para a url http://127.0.0.1:5000/users
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Controller de busca de usuário por id (GET):
 
-Enviar uma solicitação com método GET para a url http://localhost:5000/users/id_do_usuário
+Enviar uma solicitação com método GET para a url http://127.0.0.1:5000/users/id_do_usuário
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Controller de edição de usuário (PUT):
 
-Enviar uma solicitação com método PUT para a url http://localhost:5000/users
+Enviar uma solicitação com método PUT para a url http://127.0.0.1:5000/users
 
 &
 
@@ -49,7 +49,7 @@ Enviar uma solicitação com método PUT para a url http://localhost:5000/users
 
 Controller de deleção de usuário (DELETE):
 
-Enviar uma solicitação com método DELETE para a url http://localhost:5000/users
+Enviar uma solicitação com método DELETE para a url http://127.0.0.1:5000/users
 
 &
 
@@ -63,7 +63,7 @@ Enviar uma solicitação com método DELETE para a url http://localhost:5000/use
 
 Controller de criação de posts (POST):
 
-Enviar uma solicitação com método POST para a url http://localhost:5000/users/posts
+Enviar uma solicitação com método POST para a url http://127.0.0.1:5000/users/posts
 
 {
     "username": "nome_do_usuario",
@@ -76,19 +76,19 @@ Enviar uma solicitação com método POST para a url http://localhost:5000/users
 
 Controller de listagem de todos os posts (GET):
 
-Enviar uma solicitação com método GET para a url http://localhost:5000/posts
+Enviar uma solicitação com método GET para a url http://127.0.0.1:5000/users/posts
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Controller de listagem de posts por id (GET):
 
-Enviar uma solicitação com método GET para a url http://localhost:5000/posts/id_do_post
+Enviar uma solicitação com método GET para a url http://127.0.0.1:5000/users/posts/id_do_post
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Controller de edição de post (PUT):
 
-Enviar uma solicitação com método PUT para a url http://localhost:5000/users/posts
+Enviar uma solicitação com método PUT para a url http://127.0.0.1:5000/users/posts
 
 &
 
@@ -103,7 +103,7 @@ Enviar uma solicitação com método PUT para a url http://localhost:5000/users/
 
 Controller de deleção de post (DELETE):
 
-Enviar uma solicitação com método DELETE para a url http://localhost:5000/users/posts
+Enviar uma solicitação com método DELETE para a url http://127.0.0.1:5000/users/posts
 
 &
 
@@ -117,7 +117,7 @@ Enviar uma solicitação com método DELETE para a url http://localhost:5000/use
 
 Controller de edição de usuário através de um admin:
 
-Enviar solicitação com método PUT para a url http://localhost:5000/admins/users
+Enviar solicitação com método PUT para a url http://127.0.0.1:5000/admins/users
 
 &
 
@@ -132,12 +132,12 @@ Enviar solicitação com método PUT para a url http://localhost:5000/admins/use
 
 Controller de deleção de usuário através de um admin:
 
-Enviar solicitação com método DELETE para a url http://localhost:5000/admins/users
+Enviar solicitação com método DELETE para a url http://127.0.0.1:5000/admins/users
 
 &
 
 {
-    "admin_name": "nomr_do_admin",
+    "admin_name": "nome_do_admin",
     "admin_password": "senha_do_admin",
     "username": "nome_do_usuario"
 }
@@ -146,7 +146,7 @@ Enviar solicitação com método DELETE para a url http://localhost:5000/admins/
 
 Controller edição de post através de um admin:
 
-Enviar solicitação com método PUT para a url http://localhost:5000/admins/users/posts
+Enviar solicitação com método PUT para a url http://127.0.0.1:5000/admins/users/posts
 
 &
 
@@ -163,7 +163,7 @@ Enviar solicitação com método PUT para a url http://localhost:5000/admins/use
 
 Controller de deleção de post através de um admin:
 
-Enviar solicitação com método DELETE para a url http://localhost:5000/admins/users/posts
+Enviar solicitação com método DELETE para a url http://127.0.0.1:5000/admins/users/posts
 
 &
 
