@@ -31,6 +31,9 @@ class Admin(db.Model):
     admin_name = db.Column(db.String(255), unique=True, nullable=False)
     admin_password = db.Column(db.String(255), nullable=False)
     is_admin = db.Column(db.Boolean)
+    
+    def to_dict(self):
+        return {"id": self.id, "admin_name": self.admin_name, "admin_password": self.admin_password, "is_admin": self.is_admin}
 
 # Controller de criação de usuário
 @app.route('/users', methods=['POST'])
@@ -136,14 +139,14 @@ def create_post():
 
 
 # Controller de listagem de todos os posts
-@app.route('/posts', methods=['GET'])
+@app.route('/users/posts', methods=['GET'])
 def list_posts():
     posts = Post.query.all()
     return jsonify([post.to_dict() for post in posts])
 
 
 # Controller de listagem de posts por id
-@app.route('/posts/<int:id>', methods=['GET'])
+@app.route('/users/posts/<int:id>', methods=['GET'])
 def get_post(id):
     post = Post.query.get(id)
     if post:
